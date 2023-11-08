@@ -1,0 +1,162 @@
+*{
+  background-color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container-header {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: purple;
+  font-family: sans-serif;
+}
+
+.Task-form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.Task-form input{
+  margin-bottom: 20px;
+  margin: 10px;
+  padding: 10px;
+  width: 20px;
+  border-radius: 10px;
+  border: 2px solid violet;
+}
+
+.Task-form input::placeholder{
+  color: black;
+}
+
+.Task-form input:hover{
+  color: black;
+  border: 2px solid black;
+}
+
+.Task-form button{
+  width: 92%;
+  color: purple;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: aqua;
+  padding: 5px;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+.Task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #656565;
+  width: 260px;
+}
+
+.list-item p{
+  border-radius: 5px;
+  padding: 6px;
+  width: 180px;
+  margin: 20px;
+}
+
+.list-item h3{
+  border-radius: 8px;
+  padding: 6px;
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 180px;
+  margin-left: 20px;
+  font-weight: 550;
+}
+
+.list-item button{
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: purple;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  
+}
+
+/*------------ responsive design -------------*/
+
+/* For desktop screens */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Task-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.Task-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 200px;
+}
+
+.Task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.list-item button{
+  margin-right: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 600px) {
+.container-form input{
+  width: 100%;
+}
+
+.Task-form button{
+  width: 92%;
+  color: purple;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: wheat;
+  padding: 5px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+}
+
+
